@@ -1,0 +1,55 @@
+---
+Name: mysite
+After: 'framework/*','cms/*'
+---
+# YAML configuration for SilverStripe
+# See http://doc.silverstripe.org/framework/en/topics/configuration
+# Caution: Indentation through two spaces, not tabs
+SSViewer:
+  theme: 'pulse'
+Debug:
+  friendly_error_httpcode: true
+
+SiteConfig:
+  extensions:
+    - CustomSiteConfig
+File:
+  allowed_extensions:
+    - svg
+
+#SlideImage:
+#  extensions:
+#    - Versioned("Stage","Live")
+#MetroImage:
+#  extensions:
+#    - Versioned("Stage","Live")
+#HeroPage:
+#  extensions:
+#    - Versioned("Stage","Live")
+
+
+SmtpMailer:
+  host: 'mailsrv-1.punz.co.nz:587'
+  tls: true
+#  user: 'punz\julianw'
+#  password: ''
+  charset: UTF-8
+
+#Image:
+#  backend: 'ImagickBackend'
+
+#Director:
+#  environment_type: 'dev'
+---
+Only:
+  environment: 'live'
+---
+DirectDebitForm:
+  directdebitemail: 'payments@pulseenergy.co.nz'
+---
+Only:
+  environment: 'dev'
+---
+DirectDebitForm:
+  directdebitemail: 'julian-dd-dev@bitstream.co.nz'
+---

@@ -1,0 +1,25 @@
+{
+	"name": "tazzydemon/mysite-pulseweb",
+	"description": "Silverstripe Mysite folder for Pulse Website.",
+	"type": "silverstripe-module",
+
+	"authors": [{
+		"name": "Julian Warren",
+		"email": "julian.warren@pulseenergy.co.nz"
+	}
+	],
+	"require": {
+		"silverstripe/framework": "~3.4"
+	},
+	"require-dev": {
+		"phpunit/PHPUnit": "~3.7@stable"
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "3.4.0.x-dev"
+		}
+	},
+		"extra": {
+		"installer-name": "mysite"
+	}
+}
