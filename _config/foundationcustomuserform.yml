@@ -1,0 +1,10 @@
+---
+Name: foundationcustomuserform
+After:
+  - 'framework/*'
+  - 'cms/*'
+  - 'userforms/*'
+---
+UserForm:
+  extensions:
+    - FoundationCustomUserFormExtension
