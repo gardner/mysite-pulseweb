@@ -51,10 +51,12 @@ class SlideImage extends DataObject {
 
         $fields = parent::getCMSFields();
         $imageField =  new UploadField('Image','Choose Image');
+        $imageField->setDisplayFolderName('Uploads/promotionalbanners');
         $imageField->setFolderName('Uploads/promotionalbanners');
         $imageField->setRecord($this);
 
         $overlayImageField =  new UploadField('OverlayImage','Choose Overlay Image');
+        $overlayImageField->setDisplayFolderName('Uploads/promotionalbanners/overlay');
         $overlayImageField->setFolderName('Uploads/promotionalbanners/overlay');
         $overlayImageField->setRecord($this);
 //provide a default 2 pixel high image for mobile browsers to collapse the display.
@@ -76,6 +78,7 @@ class SlideImage extends DataObject {
         $myarraylist = new ArrayList($imagearray);
 
         $mobileImageField =  new UploadField('MobileImage','Choose Mobile Image <br>(default is set in site settings)',$myarraylist);
+        $mobileImageField ->setDisplayFolderName('Uploads/promotionalbanners/mobileimages');
         $mobileImageField ->setFolderName('Uploads/promotionalbanners/mobileimages');
         $mobileImageField ->setRecord($this);
 

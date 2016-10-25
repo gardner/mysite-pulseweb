@@ -4,17 +4,24 @@ global $project;
 $project = 'mysite';
 
 global $databaseConfig;
-$databaseConfig = array(
-	"type" => 'MySQLDatabase',
-	"server" => 'localhost',
-	"username" => 'ss',
-	"password" => '1aClarence',
-	"database" => 'ss',
-	"path" => '',
-);
+
+global $database;
+$database = 'pulseweb';
+
+// Use _ss_environment.php file for configuration
+require_once("conf/ConfigureFromEnv.php");
+
+//$databaseConfig = array(
+//	"type" => 'MySQLDatabase',
+//	"server" => 'localhost',
+//	"username" => 'ss',
+//	"password" => '1aClarence',
+//	"database" => 'ss',
+//	"path" => '',
+//);
 
 // Set the site locale
-i18n::set_locale('en_GB');
+i18n::set_locale('en_NZ');
 
 //$plugs = HtmlEditorConfig::get('cms')->getPlugins();
 //$plugs[] = 'lists';

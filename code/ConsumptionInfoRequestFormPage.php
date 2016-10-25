@@ -378,8 +378,8 @@ JS
 
         $customerEmailBody = "<style type=\"text/css\">table, h1, h2, p{font-family:arial, helevetica, sans-serif}</style>"
                 ."<p>Thank you for submitting your request for Consumption Information.</p>"
-                ."<p>We will now proceed to verify your identity according to the Privacy Act. This may take up to 20 business days"
-                ."<p>There will then be a period of up to 5 business days after we have validated your identity to provide the data in accordance with the Electricity Industry Participation Code 2010"
+                ."<p>We normally provide the requested consumption information within five business days, in accordance with the Electricity Industry Participation Code 2010.</p>"
+                ."<p>If we have difficultly verifying your identity so as to satisfy our obligations under the Privacy Act, we may take up to 25 business days to complete the validation and provide the requested data.</p>"
                 ."<p>Kind regards,</p>"
                 ."<p>&nbsp;</p>"
                 ."<p>Pulse Energy Customer Service</p>";

@@ -6,7 +6,7 @@ After: 'framework/*','cms/*'
 # See http://doc.silverstripe.org/framework/en/topics/configuration
 # Caution: Indentation through two spaces, not tabs
 SSViewer:
-  theme: 'pulse'
+  theme: 'highlanders'
 Debug:
   friendly_error_httpcode: true
 
@@ -29,8 +29,9 @@ File:
 
 
 SmtpMailer:
-  host: 'mailsrv-1.punz.co.nz:587'
-  tls: true
+#  host: 'mailsrv-1.punz.co.nz:587'
+  host: 'localhost'
+  tls: false
 #  user: 'punz\julianw'
 #  password: ''
   charset: UTF-8
@@ -46,10 +47,16 @@ Only:
 ---
 DirectDebitForm:
   directdebitemail: 'payments@pulseenergy.co.nz'
+RequestCallBack:
+  requestacallbackemailnew: 'joinus@pulseenergy.co.nz'
+  requestacallbackemailcurrent: 'customer.care@pulseenergy.co.nz'
 ---
 Only:
   environment: 'dev'
 ---
 DirectDebitForm:
   directdebitemail: 'julian-dd-dev@bitstream.co.nz'
+RequestCallBack:
+  requestacallbackemailnew: 'julian-new-dev@bitstream.co.nz'
+  requestacallbackemailcurrent: 'julian-cur-dev@bitstream.co.nz'
 ---

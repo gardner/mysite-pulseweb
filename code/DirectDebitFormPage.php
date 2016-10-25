@@ -31,7 +31,7 @@ class DirectDebitFormPage_Controller extends Page_Controller {
 
         $this->response->addHeader('X-Frame-Options', 'SAMEORIGIN');
 
-        Requirements::javascript('mysite/js/vendor/parsley/parsley2.2.0.min.js');
+        Requirements::javascript(FOUNDATION_FORM_DIR . '/javascript/parsley/parsley.min.js');
         Requirements::javascript('mysite/js/DirectDebitPage.js');
         Requirements::customScript(<<<JS
 
